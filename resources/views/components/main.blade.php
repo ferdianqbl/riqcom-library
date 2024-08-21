@@ -25,7 +25,7 @@
     <div class="shadow-sm bg-slate-900 fixed left-0 right-0 top-0 w-full">
       @include('./components/navbar')
     </div>
-    <div class="pt-20">
+    <div class="pt-24">
       @yield('container')
     </div>
 </body>

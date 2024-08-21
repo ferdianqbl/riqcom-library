@@ -15,7 +15,7 @@ class User extends Model
     ];
     protected $table = 'users';
     protected $fillable = [
-        'card_id','name','birth_date','join_date'
+        'card_id','name','birth_date','join_date','member_id'
     ];
 
     public function loan_transactions()

@@ -27,7 +27,7 @@
         @enderror
       </div>
       <div class="p-4">
-        <label for="pages" class="block">Stocks</label>
+        <label for="pages" class="block">Jumlah Halaman</label>
         <input type="number" name="pages" id="pages" class="w-full border rounded-md p-2">
         @error('pages')
           <div class="text-red-500">

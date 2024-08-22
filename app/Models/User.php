@@ -20,10 +20,10 @@ class User extends Model
 
     public function loan_transactions()
     {
-        return $this->hasMany(LoanTransaction::class);
+        return $this->hasMany(Loan_Transaction::class);
     }
     public function return_transactions()
     {
-        return $this->hasMany(ReturnTransaction::class);
+        return $this->hasMany(Return_Transaction::class);
     }
 }

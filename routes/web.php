@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LoanTransactionController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => 'guest:admin'], function () {
@@ -32,5 +33,12 @@ Route::group(['middleware' => 'auth:admin'], function () {
         Route::get('/users/add', 'create');
         Route::post('/users/add', 'store');
         Route::delete('/users/{id}', 'destroy');
+    });
+
+    Route::controller(LoanTransactionController::class)->group(function () {
+        Route::get('/loans', 'index')->name('loans.index');
+        Route::get('/loans/add', 'create');
+        Route::post('/loans/add', 'store');
+        Route::delete('/loans/{id}', 'destroy');
     });
 });

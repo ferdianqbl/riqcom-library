@@ -13,7 +13,7 @@ class Loan_Transaction extends Model
         'created_at' => 'datetime:Y-m-d H:m:s',
         'updated_at' => 'datetime:Y-m-d H:m:s',
     ];
-    protected $table = 'loan_transactions';
+    protected $table = 'loan__transactions';
     protected $fillable = [
         'user_id','book_id','loan_date'
     ];

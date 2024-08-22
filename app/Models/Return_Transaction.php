@@ -13,7 +13,7 @@ class Return_Transaction extends Model
         'created_at' => 'datetime:Y-m-d H:m:s',
         'updated_at' => 'datetime:Y-m-d H:m:s',
     ];
-    protected $table = 'return_transactions';
+    protected $table = 'return__transactions';
     protected $fillable = [
         'member_id','book_id','return_date','price'
     ];

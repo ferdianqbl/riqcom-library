@@ -15,7 +15,7 @@ class Return_Transaction extends Model
     ];
     protected $table = 'return__transactions';
     protected $fillable = [
-        'member_id','book_id','return_date','price'
+        'user_id','book_id','return_date','price'
     ];
 
     public function user()

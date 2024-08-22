@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('return__transactions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('member_id')->constrained('users')->onDelete('cascade');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->foreignId('book_id')->constrained('books')->onDelete('cascade');
             $table->date('return_date');
             $table->string('price');
